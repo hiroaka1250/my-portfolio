@@ -4,11 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
   </head>
   <body>
-    <script src="main.js"></script>
+    <header>
+      <h1 class="" header-title>僕の自己紹介サイト</h1>
+      <ul class="header-list">
+        <li><a href="https://twitter.com/aka0208">twitter</a></li>
+        <li><a href="https://www.instagram.com/akahiro_0208/">instagram</a></li>
+      </ul>
+    </header>
+    <div class="main-container">
+      <div class="hobby">
+        <h2>僕の苗字はなんでしょう？？</h2>
+        <button id="redstar">赤星</button>
+        <button id="bluestar">青星</button>
+        <button id="yerrowstar">黄星</button>
+        <button id="ackermanstar">アッカーマン星</button>
+        <div id="answer"></div>
+      </div>
+    </div>
+    <script>
+      const redStar = document.getElementById("redstar");
+      const blueStar = document.getElementById("bluestar");
+      const yellowStar = document.getElementById("yerrowstar");
+      const ackermanSatr = document.getElementById("ackermanstar");
+      const answer = document.getElementById("answer");
+
+      redStar.onclick = function () {
+        answer.textContent = "正解！大好き！";
+      };
+      blueStar.onclick = function () {
+        answer.textContent = "惜しい！泣いていいかな？";
+      };
+      yellowStar.onclick = function () {
+        answer.textContent = "惜しい！泣いていいかな？";
+      };
+      ackermanSatr.onclick = function () {
+        answer.textContent = "これ選んだ君は死刑！";
+      };
+    </script>
   </body>
 </html>
